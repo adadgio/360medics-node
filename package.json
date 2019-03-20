@@ -1,6 +1,6 @@
 {
   "name": "360medics-node",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "360medics npm libraries",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
