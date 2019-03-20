@@ -11,4 +11,8 @@ Repository of often used NPM libraries for Typescript Node 360medics projects.
 - Develop: `npm run build:watch`
 - Build: `npm run build`
 
-Publish to npm ao an automatic new minor version  with `nnpm run publish`
+## Publish changed to npm
+
+First **commit your changes**. Then upgrade version number and commit.
+
+`npm version minor && npm publish`
