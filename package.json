@@ -8,8 +8,6 @@
     "build": "tsc",
     "watch": "tsc --watch",
     "lint": "tslint --project \"./tsconfig.json\"",
-    "commit": "git add -A && git commit -m \"Commited changes\"",
-    "publish": "npm run commit && npm run build && npm version minor && npm publish",
     "test": "mocha -r ts-node/register test/**/*.spec.ts"
   },
   "author": "Romain BRUCKERT <romain@360medics.com>",
