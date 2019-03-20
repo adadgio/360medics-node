@@ -1,11 +1,26 @@
 {
   "name": "360medics-node",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.2",
+  "description": "360medics npm libraries",
+  "main": "./dist/medics.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "lint": "tslint --project \"./tsconfig.json\"",
+    "publish": "git add -A && git commit -m \"Published\" && npm run build && npm publish",
+    "test": "mocha -r ts-node/register test/**/*.spec.ts"
   },
   "author": "Romain BRUCKERT <romain@360medics.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.11.4",
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "ts-node": "^8.0.3",
+    "tslint": "^5.14.0",
+    "typescript": "^3.3.4000"
+  }
 }
